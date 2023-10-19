@@ -37,7 +37,7 @@ global.jQuery = require('jquery');
 
         var rotateToPreviousImage = function() {
             let prevIndex = currentIndex - 1;
-            if (prevIndex < 0) nextIndex = children.length-1;
+            if (prevIndex < 0) prevIndex = children.length-1;
             rotateToImageWithIndex(prevIndex);
         }
 
